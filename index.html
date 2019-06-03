@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="P">
 <head>
 	<script src="lib/jquery.js"></script>
 	<meta charset="utf-8">
@@ -7,7 +7,15 @@
 	<link rel="stylesheet" href="lib/boo/css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body ng-controller="Pokemon">
+
+	<div class="cuadro" ng.repeat="y in ListadoPokemon">
+		
+		<img src="{{y.data.sprites.front_default}}">
+		<span>{{y.data.name}}</span>
+		
+	</div>
+
 	<script src="lib/angular.js"></script>
 	<script src="lib/boo/js/bootstrap.js"></script>
 	<script src="js/cript.js"></script>
