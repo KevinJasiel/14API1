@@ -1,5 +1,8 @@
 .cuadro{
-	width: 250px;
-	height: 250px;
+	width: 140px;
+	height: 140px;
 	border: 2px solid black;
+	text-align: center;
+	margin-top: 5px;
+	background-color: skyblue; 
 }

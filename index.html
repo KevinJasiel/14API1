@@ -8,17 +8,24 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body ng-controller="Pokemon">
-
-	<div class="cuadro" ng.repeat="y in ListadoPokemon">
+	
+ 	<div class="container">
+ 		<div class="row ">
+ 			<div class="col-md-3" ng-repeat="y in ListadoPokemon">
+				<div class="cuadro">
 		
-		<img src="{{y.data.sprites.front_default}}">
-		<span>{{y.data.name}}</span>
-		
+					<img src="{{y.data.sprites.front_default}}">
+					<div class="na">
+					<span>{{y.data.name}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="lib/angular.js"></script>
 	<script src="lib/boo/js/bootstrap.js"></script>
-	<script src="js/cript.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>
