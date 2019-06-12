@@ -10,23 +10,31 @@
 </head>
 <body  class="cuerpo" ng-controller="Pokemon">
 
-	<header>
+	<div class="containerd">
+		<div class="row">
+			<div class="col-md-5"><img src="images/write.png" class="images"></div>
+			<div class="col-md-3"><input type="text" ng-model="buscar" placeholder="Buscar Pokemon"></div>
+			<div class="col-md-2"><a href="templeates/login.html"><input type="button" value="Sign Out"></a></div>
+		</div>
+	</div>
+
+	<!--<header>
 		<nav>
 			<ul>
-				<!--<li><img src="https://fontmeme.com/images/Pokemon-Logo.jpg"></li>-->
-				<li><a href="">Long it</a></li>
+				<li><img src="images/write.png" class="img-respomsive"></li>
+				<li><a href="templeates/login.html">Long it</a></li>
 			</ul>
 		</nav>
-	</header>
+	</header>-->
 	
  	<div class="container">
  		<div class="row ">
- 			<div class="col-md-3" ng-repeat="y in ListadoPokemon">
+ 			<div class="col-md-4" ng-repeat="y in ListadoPokemon | filter:buscar">
 				<div class="cuadro">
 		
 					<img src="{{y.data.sprites.front_default}}">
 					<div class="na">
-					<span>{{y.data.name}}</span>
+					<span>{{y.data.name}} NO: {{ y.data.id }} </span>
 					</div>
 				</div>
 			</div>
