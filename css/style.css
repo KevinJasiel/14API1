@@ -1,11 +1,17 @@
 .cuadro{
-	width: 140px;
-	height: 140px;
+	width: 250px;
+	height: 250px;
 	border: 2px solid black;
 	text-align: center;
 	margin-top: 5px;
 	background-color: skyblue opacity 0.5;
 	color: white;
+}
+
+.na{
+	width: 250px;
+	text-align: center;
+
 }
 
 .cuerpo{
@@ -130,5 +136,10 @@ nav li{
 
 .containerd input[type = "button"]{
 	width: 280px;
-	background: black;
+	background: skyblue;
+}
+
+.poke {
+	width: 100%;
+	height: auto;
 }
